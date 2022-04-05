@@ -21,7 +21,7 @@ function selectAsJson(object $db, string $sql): void {
 
 function selectRowAsJson(object $db, string $sql): void {
     $query = $db->query($sql);
-    $results = $query->fetchAll(PDO::FETCH_ASSOC);
+    $results = $query->fetch(PDO::FETCH_ASSOC);
     header('HTTP/1.1 200 OK');
     echo json_encode($results);
 }
