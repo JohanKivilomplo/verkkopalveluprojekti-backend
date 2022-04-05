@@ -43,3 +43,12 @@ tilausnro INT NOT NULL PRIMARY KEY,
     FOREIGN KEY (tilausnro) REFERENCES tilaus(tilausnro),
     FOREIGN KEY (tuotenro) REFERENCES tuote(tuotenro)
 );
+
+CREATE Table palaute (
+    palautenro INT(255) PRIMARY KEY AUTO_INCREMENT,
+    etunimi VARCHAR(255) NOT NULL,
+    sukunimi VARCHAR(255) NOT NULL,
+    sposti VARCHAR(255) NOT NULL,
+    puhnro INT(255) NOT NULL,
+    palaute TEXT NOT NULL
+);
