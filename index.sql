@@ -44,4 +44,11 @@ tilausnro INT NOT NULL PRIMARY KEY,
     FOREIGN KEY (tuotenro) REFERENCES tuote(tuotenro)
 );
 
-insert into tuoteryhma (tuoteryhmanro,tuoteryhmanimi) values ("1","Korttipelit");
+CREATE Table palaute (
+    palautenro INT(255) PRIMARY KEY AUTO_INCREMENT,
+    etunimi VARCHAR(255) NOT NULL,
+    sukunimi VARCHAR(255) NOT NULL,
+    sposti VARCHAR(255) NOT NULL,
+    puhnro INT(255) NOT NULL,
+    palaute TEXT NOT NULL
+);
