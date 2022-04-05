@@ -43,3 +43,5 @@ tilausnro INT NOT NULL PRIMARY KEY,
     FOREIGN KEY (tilausnro) REFERENCES tilaus(tilausnro),
     FOREIGN KEY (tuotenro) REFERENCES tuote(tuotenro)
 );
+
+insert into tuoteryhma (tuoteryhmanro,tuoteryhmanimi) values ("1","Korttipelit");
