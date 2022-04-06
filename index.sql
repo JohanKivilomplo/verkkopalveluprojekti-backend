@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS verkkokauppa;
+
 CREATE DATABASE verkkokauppa;
 
 USE verkkokauppa;
@@ -52,3 +54,7 @@ CREATE Table palaute (
     puhnro INT(255) NOT NULL,
     palaute TEXT NOT NULL
 );
+
+INSERT INTO tuoteryhma(tuoteryhmanimi)
+    VALUES ("Lautapelit")
+;
