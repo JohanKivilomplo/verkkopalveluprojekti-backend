@@ -29,7 +29,7 @@ tuotenro INT PRIMARY KEY AUTO_INCREMENT,
 
 CREATE table tilaus (
    tilausnro INT PRIMARY KEY AUTO_INCREMENT,
-asikasnro INT NOT NULL,
+asiakasnro INT NOT NULL,
 tilauspvm DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 tila CHAR(1),
 FOREIGN KEY (asiakasnro) REFERENCES asiakas(asiakasnro)
