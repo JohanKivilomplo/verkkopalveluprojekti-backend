@@ -56,5 +56,12 @@ CREATE Table palaute (
 );
 
 INSERT INTO tuoteryhma(tuoteryhmanimi)
-    VALUES ("Lautapelit")
+    VALUES 
+    ("Lautapelit"),
+    ("Korttipelit"),
+    ("Strategiapelit"),
+    ("Koko perheelle"),
+    ("Roolipelit"),
+    ("Nopat"),
+    ("Miniatyyrit")
 ;
