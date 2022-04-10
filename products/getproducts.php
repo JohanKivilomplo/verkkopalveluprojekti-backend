@@ -4,9 +4,9 @@ require_once '../inc/headers.php';
 
 try {
     $db = openDb();
-    selectAsJson($db,"select * from tuoteryhma order by tuoteryhmanro");
+    selectAsJson($db,"select * from tuote");
 } catch (PDOException $pdoex) {
     returnError($pdoex);
 }
 
-//http://localhost/verkkopalveluprojekti-backend/products/getcategories.php
+//http://localhost/verkkopalveluprojekti-backend/products/getproducts.php
