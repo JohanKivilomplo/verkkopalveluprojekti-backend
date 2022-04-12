@@ -69,5 +69,10 @@ INSERT INTO tuoteryhma(tuoteryhmanimi)
 INSERT INTO tuote(tuotenimi,hinta,tietoa,tuoteryhmanro)
     VALUES 
     ("Carcasonne","45","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
-    ("Dominion","35","Deck building",2)
+    ("Dominion","35","Deck building",2),
+    ("Dead Of Winter","65","Strategiapelien ystävälle.",3),
+    ("Alias","25","Täydellinen peli koko perheen peli-iltaan.",4),
+    ("Raippa ja suukapula","69","Ai etkö etsinyt tälläistä roolipeliä vai?",5),
+    ("Yatzy","20","Heitä noppaa ja toivo parasta!",6),
+    ("Weleho Figuuri","40","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7)
 ;
