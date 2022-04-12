@@ -68,6 +68,6 @@ INSERT INTO tuoteryhma(tuoteryhmanimi)
 
 INSERT INTO tuote(tuotenimi,hinta,tietoa,tuoteryhmanro)
     VALUES 
-    ("Carcasonne","45€","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
-    ("Dominion","35€","Deck building",2)
+    ("Carcasonne","45","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
+    ("Dominion","35","Deck building",2)
 ;
