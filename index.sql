@@ -69,17 +69,17 @@ INSERT INTO tuoteryhma(tuoteryhmanimi)
 
 INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
     VALUES 
-    ("Carcasonne","45","Shakki.png","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
-    ("Kimble","20","Shakki.png","Tutustu vanhaan klassikkoon uudestaan.",1),
-    ("Monopoly","20","Shakki.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",1),
+    ("Carcasonne","45","Carcassonne.png","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
+    ("Kimble","20","Kimble.png","Tutustu vanhaan klassikkoon uudestaan.",1),
+    ("Monopoly","20","Monopoly.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",1),
 
-    ("Dominion","35","Shakki.png","Deck building",2),
-    ("Cards against humanity","45","Shakki.png","Korttipeli kamalille ihmisille.",2),
+    ("Dominion","35","Dominion.jpg","Deck building",2),
+    ("Cards against humanity","45","CaH.jpg","Korttipeli kamalille ihmisille.",2),
     ("Skip-Bo","15","Shakki.png","Kuka saa pinonsa tyhjäksi ensin?",2),
 
     ("Dead Of Winter","65","Shakki.png","Strategiapelien ystävälle.",3),
     ("Shakki","30","Shakki.png","Klassisten strategiapelien ystävälle.",3),
-    ("Risk","40","Shakki.png","Maailma kaipaa valloittajaa.",3),
+    ("Risk","40","Risk.png","Maailma kaipaa valloittajaa.",3),
 
     ("Alias","25","Shakki.png","Täydellinen peli koko perheen peli-iltaan.",4),
     ("Twister","20","Shakki.png","Riittääkö tasapainosi ja venyvyytesi haasteeseen?",4),
@@ -90,8 +90,8 @@ INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
     ("Hero Quest","119","Shakki.png","Roolipelien ystävälle",5),
 
     ("Yatzy","20","Shakki.png","Heitä noppaa ja toivo parasta!",6),
-    ("Kimble","20","Shakki.png","Tutustu vanhaan klassikkoon uudestaan.",6),
-    ("Monopoly","20","Shakki.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",6),
+    ("Kimble","20","Kimble.png","Tutustu vanhaan klassikkoon uudestaan.",6),
+    ("Monopoly","20","Monopoly.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",6),
 
     ("Weleho Figuuri","40","Shakki.png","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
     ("Warrior","20","Shakki.png","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
