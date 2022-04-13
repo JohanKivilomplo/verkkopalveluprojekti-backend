@@ -72,6 +72,11 @@ INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
     ("Carcasonne","45","Carcassonne.png","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
     ("Kimble","20","Kimble.png","Tutustu vanhaan klassikkoon uudestaan.",1),
     ("Monopoly","20","Monopoly.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",1),
+    ("Trivial Pursuit", "28", "TrivialPursuit.jpg", "Tällä pelillä pääset testaamaan yleistietoasi!", 1)
+    ("The Game Of Life", "30", "TheGameOfLife.jpg", "Tässä pelissä pääset kokemaan erilaisia käänteitä pelaajasi elinkaarella.", 1)
+    ("Clue", "18", "Clue.jpg", "Cluessa pääset pelaamaan etsivän roolissa ja selvittämään rikoksen syitä.", 1)
+    ("Blokus", "22", "Blokus.jpg", "Tämä peli on kuin Tetris, mutta pienellä twitstillä!", 1)
+    ("Operation", "20", "Operation.jpg", "Jos olet kiinnostunut kirugin hommista, tämä peli on sinulle!", 1)
 
     ("Dominion","35","Dominion.jpg","Deck building",2),
     ("Cards against humanity","45","CaH.jpg","Korttipeli kamalille ihmisille.",2),
