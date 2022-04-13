@@ -24,6 +24,7 @@ CREATE TABLE tuote (
 tuotenro INT PRIMARY KEY AUTO_INCREMENT,
     tuotenimi VARCHAR(255) NOT NULL,
     hinta INT NOT NULL,
+    kuva VARCHAR(100),
     tietoa TEXT NOT NULL,
     tuoteryhmanro INT NOT NULL,
     FOREIGN KEY (tuoteryhmanro) REFERENCES tuoteryhma(tuoteryhmanro)
