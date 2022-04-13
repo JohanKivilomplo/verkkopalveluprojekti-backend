@@ -72,15 +72,16 @@ INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
     ("Carcasonne","45","Carcassonne.png","Peli, jossa pelivälineenänne toimii itse pelilauta.",1),
     ("Kimble","20","Kimble.png","Tutustu vanhaan klassikkoon uudestaan.",1),
     ("Monopoly","20","Monopoly.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",1),
-    ("Trivial Pursuit", "28", "TrivialPursuit.jpg", "Tällä pelillä pääset testaamaan yleistietoasi!", 1)
-    ("The Game Of Life", "30", "TheGameOfLife.jpg", "Tässä pelissä pääset kokemaan erilaisia käänteitä pelaajasi elinkaarella.", 1)
-    ("Clue", "18", "Clue.jpg", "Cluessa pääset pelaamaan etsivän roolissa ja selvittämään rikoksen syitä.", 1)
-    ("Blokus", "22", "Blokus.jpg", "Tämä peli on kuin Tetris, mutta pienellä twitstillä!", 1)
-    ("Operation", "20", "Operation.jpg", "Jos olet kiinnostunut kirugin hommista, tämä peli on sinulle!", 1)
+    ("Trivial Pursuit", "28", "TrivialPursuit.jpg", "Tällä pelillä pääset testaamaan yleistietoasi!", 1),
+    ("The Game Of Life", "30", "TheGameOfLife.jpg", "Tässä pelissä pääset kokemaan erilaisia käänteitä pelaajasi elinkaarella.", 1),
+    ("Clue", "18", "Clue.jpg", "Cluessa pääset pelaamaan etsivän roolissa ja selvittämään rikoksen syitä.", 1),
+    ("Blokus", "22", "Blokus.jpg", "Tämä peli on kuin Tetris, mutta pienellä twitstillä!", 1),
+    ("Operation", "20", "Operation.jpg", "Jos olet kiinnostunut kirugin hommista, tämä peli on sinulle!", 1),
 
     ("Dominion","35","Dominion.jpg","Deck building",2),
     ("Cards against humanity","45","CaH.jpg","Korttipeli kamalille ihmisille.",2),
     ("Skip-Bo","15","SkipBo.jpg","Kuka saa pinonsa tyhjäksi ensin?",2),
+    ("The Lord of The Rings","35","TheLordOfTheRings.png","Lord of The Rings -faneille!",2),
 
     ("Dead Of Winter","65","DeadOfWinter.jpg","Strategiapelien ystävälle.",3),
     ("Shakki","30","Shakki.png","Klassisten strategiapelien ystävälle.",3),
@@ -88,7 +89,7 @@ INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
 
     ("Alias","25","Alias.jpg","Täydellinen peli koko perheen peli-iltaan.",4),
     ("Twister","20","Twister.jpg","Riittääkö tasapainosi ja venyvyytesi haasteeseen?",4),
-    ("UNO","15","Uno.jpg","Klassista hasukaa koko perheen kesken",4),
+    ("UNO","15","Uno.jpg","Klassista hauskaa koko perheen kesken",4),
 
     ("Dungeons and Dragons starter pack","25","DungeonsAndDragons_StarterPack.jpg","Hyvä paikka aloittaa matka D&D:n mielenkiintoiseen maailmaan",5),
     ("Scythe","49","Scythe.jpg","Roolipelien ystävälle",5),
