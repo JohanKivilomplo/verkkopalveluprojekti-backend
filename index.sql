@@ -80,26 +80,26 @@ INSERT INTO tuote(tuotenimi,hinta,kuva,tietoa,tuoteryhmanro)
 
     ("Dominion","35","Dominion.jpg","Deck building",2),
     ("Cards against humanity","45","CaH.jpg","Korttipeli kamalille ihmisille.",2),
-    ("Skip-Bo","15","Shakki.png","Kuka saa pinonsa tyhjäksi ensin?",2),
+    ("Skip-Bo","15","SkipBo.jpg","Kuka saa pinonsa tyhjäksi ensin?",2),
 
-    ("Dead Of Winter","65","Shakki.png","Strategiapelien ystävälle.",3),
+    ("Dead Of Winter","65","DeadOfWinter.jpg","Strategiapelien ystävälle.",3),
     ("Shakki","30","Shakki.png","Klassisten strategiapelien ystävälle.",3),
     ("Risk","40","Risk.png","Maailma kaipaa valloittajaa.",3),
 
-    ("Alias","25","Shakki.png","Täydellinen peli koko perheen peli-iltaan.",4),
-    ("Twister","20","Shakki.png","Riittääkö tasapainosi ja venyvyytesi haasteeseen?",4),
-    ("UNO","15","Shakki.png","Klassista hasukaa koko perheen kesken",4),
+    ("Alias","25","Alias.jpg","Täydellinen peli koko perheen peli-iltaan.",4),
+    ("Twister","20","Twister.jpg","Riittääkö tasapainosi ja venyvyytesi haasteeseen?",4),
+    ("UNO","15","Uno.jpg","Klassista hasukaa koko perheen kesken",4),
 
-    ("Dungeons and Dragons starter pack","25","Shakki.png","Hyvä paikka aloittaa matka D&D:n mielenkiintoiseen maailmaan",5),
-    ("Scythe","49","Shakki.png","Roolipelien ystävälle",5),
-    ("Hero Quest","119","Shakki.png","Roolipelien ystävälle",5),
+    ("Dungeons and Dragons starter pack","25","DungeonsAndDragons_StarterPack.jpg","Hyvä paikka aloittaa matka D&D:n mielenkiintoiseen maailmaan",5),
+    ("Scythe","49","Scythe.jpg","Roolipelien ystävälle",5),
+    ("Hero Quest","119","HeroQuest.jpg","Roolipelien ystävälle",5),
 
-    ("Yatzy","20","Shakki.png","Heitä noppaa ja toivo parasta!",6),
+    ("Yatzy","20","Yatzy.jpg","Heitä noppaa ja toivo parasta!",6),
     ("Kimble","20","Kimble.png","Tutustu vanhaan klassikkoon uudestaan.",6),
     ("Monopoly","20","Monopoly.png","Vain yksi voi olla Wallstreetin kunkku. Oletko se sinä?",6),
 
-    ("Weleho Figuuri","40","Shakki.png","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
-    ("Warrior","20","Shakki.png","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
-    ("Mage","20","Shakki.png","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7)
+    ("Weleho Figuuri","40","Figuuri_Weleho.jpg","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
+    ("Warrior","20","Figuuri_Warrior.jpg","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7),
+    ("Mage","20","Figuuri_Mage.jpg","Täydellinen tapa tuoda luonnetta lautapeli-iltaan. Oma figuuri!",7)
 
 ;
