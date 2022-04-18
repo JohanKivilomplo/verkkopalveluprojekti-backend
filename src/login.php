@@ -7,7 +7,7 @@
 // Tarkistetaan onko muuttujia asetettu
 
 if( !isset($uname) || !isset($pw) ){
-    echo "Parametreja puuttui! Ei voida lisätä henkilöä";
+    echo "Parametreja puuttui! Ei voida kirjautua";
     exit;
 }
 
@@ -41,8 +41,10 @@ if( empty($uname) || empty($pw) ){
 
         echo "Tervetuloa ".$row["firstname"]." ".$row["lastname"].". Olet kirjautunut sisään.";
     }catch(PDOException $e){
-        echo "Käyttäjää ei voitu lisätä<br>";
+        echo "Kirjautuminen ei onnistunut<br>";
         echo $e->getMessage();
     }
+
+    // SESSION lisääminen??? videolla ~75:00
 
 ?>
