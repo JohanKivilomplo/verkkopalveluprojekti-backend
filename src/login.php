@@ -17,8 +17,32 @@ if( empty($uname) || empty($pw) ){
     exit;
 }
 
-?>
-
-// Tietokantahaun lisäys käyttäjänimellä (kopioi add_person.php:sta, videolla kohta 41:00)
+// Tietokantahaun lisäys käyttäjänimellä
 // Salasanan verifioinnin kokeilu
 
+    try {
+        // Suoritetaan parametrien lisääminen tietokantaan.
+        $sql = "SELECT * FROM person WHERE username=?";
+        $statement = $pdo->prepare($sql);
+        $statement->bindParam(1, $uname);
+        $statement->execute();
+
+        if($statement->rowCount() <=0){
+            echo "Käyttäjää ei löydy!";
+            exit;
+        }
+
+        $row = $statement->fetch();
+
+        if(!password_verify($pw, $row["password"] )){
+            echo "Väärä salasana!";
+            exit;
+        }
+
+        echo "Tervetuloa ".$row["firstname"]." ".$row["lastname"].". Olet kirjautunut sisään.";
+    }catch(PDOException $e){
+        echo "Käyttäjää ei voitu lisätä<br>";
+        echo $e->getMessage();
+    }
+
+?>
