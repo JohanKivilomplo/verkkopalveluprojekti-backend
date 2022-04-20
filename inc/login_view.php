@@ -1,5 +1,8 @@
 <?php
-include('../src/templates/head.php'); /* <-- Osoite ei vielä oikea */
+require_once 'functions.php';
+require_once 'inc/headers.php';
+
+include('../src/login.php'); /* <-- Osoite ei vielä oikea */
     echo '<form action="../src/modules/login.php" method="post">
         <label for="username">Username:</label><br>
         <input type="text" name="username" id="username"><br>
@@ -8,6 +11,8 @@ include('../src/templates/head.php'); /* <-- Osoite ei vielä oikea */
         <input type="submit" class="btn btn-primary" value "Log in">
     </form>';
 include('../'); // muuta osoite
+
+?>
 
     
     

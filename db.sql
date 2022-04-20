@@ -12,4 +12,4 @@ CREATE TABLE person(
 
 INSERT INTO person(ID,firstname,lastname,username,password)
     VALUES 
-    ("1","Maija","Meikäläinen","maijameikalainen","maija"),
+    (1,"Maija","Meikäläinen","maijameikalainen","maija")
