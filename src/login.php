@@ -1,5 +1,5 @@
 <?php
-    require('db.php');
+    require('modules/db.php');
 
     $uname = filter_input(INPUT_POST, "username");
     $pw = filter_input(INPUT_POST, "password");

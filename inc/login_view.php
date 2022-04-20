@@ -1,6 +1,6 @@
 <?php
 require_once 'functions.php';
-require_once 'inc/headers.php';
+require_once 'headers.php';
 
 include('../src/login.php'); /* <-- Osoite ei vielä oikea */
     echo '<form action="../src/modules/login.php" method="post">
