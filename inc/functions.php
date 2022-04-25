@@ -37,3 +37,4 @@ function returnError(PDOException $pdoex): void {
     echo json_encode($error);
     exit;
 }
+?>
