@@ -36,7 +36,7 @@ if(!isset($_SESSION["username"]) && isset($uname)){
 
 
 
-        <form action="../src/modules/login.php" method="post">
+        <form action="../src/login.php" method="post">
         <label for="username">Username:</label><br>
         <input type="text" name="username" id="username"><br>
         <label for="password">Password:</label><br>
