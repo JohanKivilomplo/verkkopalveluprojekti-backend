@@ -7,9 +7,9 @@ CREATE TABLE person(
     firstname VARCHAR(150),
     lastname VARCHAR(150),
     username VARCHAR(150) UNIQUE,
-    password VARCHAR(150)
+    salasana VARCHAR(150)
 );
 
-INSERT INTO person(ID,firstname,lastname,username,password)
+INSERT INTO person(ID,firstname,lastname,username,salasana)
     VALUES 
     (1,"Maija","Meikäläinen","maijameikalainen","maija")
