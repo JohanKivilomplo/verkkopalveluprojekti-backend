@@ -10,7 +10,7 @@
 // MUUTA TIETOKANNAN MUKAISET NIMET TÄHÄN!!!
 
 function getPdoConnection(){
-    $init = parse_ini_file(BASE_DIR."conf.ini");
+    $init = parse_ini_file("../config.ini");
     $host = $init["host"];
     $db = $init["database"];
     $uname = $init["user"];

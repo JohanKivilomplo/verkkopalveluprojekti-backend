@@ -40,8 +40,12 @@ function login($uname, $pw){
         $_SESSION["fname"] = $row["firstname"];
         $_SESSION["lname"] = $row["lastname"];
 
+
+        echo "Tervetuloa";
+
     }catch(PDOException $e){
-        throw $e;
+        echo "Kirjautuminen ei onnistunut";
+        echo $e->getMessage();
     }
 
 }
