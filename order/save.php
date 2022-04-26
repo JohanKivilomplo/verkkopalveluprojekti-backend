@@ -26,7 +26,7 @@ try {
     $asiakasnro = executeInsert($db, $sql);
 
     // Insert Order
-    $sql = "insert into 'order' (asiakasnro) values ($asiakasnro)";
+    $sql = "insert into 'tilausrivi' (asiakasnro) values ($asiakasnro)";
     $order_id = executeInsert($db, $sql);
 
         foreach ($cart as $product) {
