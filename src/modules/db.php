@@ -12,14 +12,14 @@
 function getPdoConnection(){
     $init = parse_ini_file(BASE_DIR."conf.ini");
     $host = $init["host"];
-    $db = $init["db"];
-    $user = $init["username"];
-    $password = $init["pw"];
+    $db = $init["database"];
+    $uname = $init["user"];
+    $pw = $init["password"];
 
     $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
 
     try {
-        $pdo = new PDO($dsn, $user, $password);
+        $pdo = new PDO($dsn, $uname, $pw);
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
