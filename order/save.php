@@ -1,6 +1,6 @@
 <?php
 
-include '../inc/headers.php';
+include 'headers.php';
 
 $sukunimi = filter_var($input -> sukunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $osoite = filter_var($input -> osoite, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -33,7 +33,7 @@ try {
           $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
         .
           $tilausnro . "," .
-          $tuote -> tuotenro
+          $tuote -> tuotenimi
           . ")";
           executeInsert($db, $sql);
         }
