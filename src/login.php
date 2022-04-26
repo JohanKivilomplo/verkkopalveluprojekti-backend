@@ -19,7 +19,7 @@ function login($uname, $pw){
     try{
         $pdo = getPdoConnection();
         //Haetaan käyttäjä annetulla käyttäjänimellä
-        $sql = "SELECT username, password, firstname, lastname FROM person WHERE username=?";
+        $sql = "SELECT firstname, lastname, username, salasana FROM person WHERE username=?";
         $statement = $pdo->prepare($sql);
         $statement->bindParam(1, $uname);
         $statement->execute();
@@ -31,7 +31,7 @@ function login($uname, $pw){
         $row = $statement->fetch();
 
         //Tarkistetaan käyttäjän antama salasana tietokannan salasanaa vasten
-        if(!password_verify($pw, $row["password"] )){
+        if(!password_verify($pw, $row["salasana"] )){
             throw new Exception("Wrong password!!");
         }
 
