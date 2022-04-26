@@ -1,6 +1,6 @@
 <?php
 
-include 'headers.php';
+include '../inc/headers.php';
 
 $sukunimi = filter_var($input -> sukunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $osoite = filter_var($input -> osoite, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
