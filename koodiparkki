@@ -1,0 +1,27 @@
+CONFIG.INI
+host = localhost
+database = verkkokauppa
+user = root
+dbpassword = <- tämä rikkoo
+
+GETPRODUCTS.PHP
+try {
+    $db = openDb(); <- Tämä rikkoo
+    $sql = "select * from tuoteryhma where tuoteryhmanro = $category_id";
+    $query = $db->query($sql);
+    $category = $query->fetch(PDO::FETCH_ASSOC);
+
+GETCATEGORIES.PHP
+try {
+    $db = openDb(); 
+    selectAsJson($db,"select * from tuoteryhma order by tuoteryhmanro");
+} catch (PDOException $pdoex) {
+    returnError($pdoex);
+}
+
+SAVE.PHP 
+
+try {
+    $db = openDb(); <- tämä rikkoo
+    $db -> beginTransaction();
+    
