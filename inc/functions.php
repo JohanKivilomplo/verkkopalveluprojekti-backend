@@ -1,6 +1,6 @@
 <?php
 
-function openDb(): object {
+function getPdoConnection(): object {
     $ini= parse_ini_file("../config.ini", true);
 
     $host = $ini['host'];

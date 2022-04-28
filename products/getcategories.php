@@ -3,7 +3,7 @@ require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
 try {
-    $db = openDb();
+    $db = getPdoConnection();
     selectAsJson($db,"select * from tuoteryhma order by tuoteryhmanro");
 } catch (PDOException $pdoex) {
     returnError($pdoex);

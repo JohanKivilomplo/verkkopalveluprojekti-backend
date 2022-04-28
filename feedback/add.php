@@ -9,7 +9,7 @@ $palaute = filter_var($input->palaute, FILTER_SANITIZE_SPECIAL_CHARS);
 
 
 try{
-$db = openDB();
+$db = getPdoConnection();
 
 $query = $db->prepare('insert into palaute(sahkoposti,palaute) values (:sahkoposti, :palaute)');
 $query->bindValue(':sahkoposti', $sahkoposti, PDO::PARAM_STR);

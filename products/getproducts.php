@@ -7,7 +7,7 @@ $parameters = explode('/',$uri);
 $category_id = $parameters[1];
 
 try {
-    $db = openDb();
+    $db = getPdoConnection();
     $sql = "select * from tuoteryhma where tuoteryhmanro = $category_id";
     $query = $db->query($sql);
     $category = $query->fetch(PDO::FETCH_ASSOC);

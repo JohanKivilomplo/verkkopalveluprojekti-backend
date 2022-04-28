@@ -9,7 +9,7 @@ $postitmp = filter_var($input -> postitmp, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $cart = $input -> cart;
 
 try {
-    $db = openDb(); 
+    $db = getPdoConnection(); 
     $db -> beginTransaction();
     
 

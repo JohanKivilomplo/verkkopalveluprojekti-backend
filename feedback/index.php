@@ -3,7 +3,7 @@ require_once 'inc/headers.php';
 require_once 'inc/functions.php';
 
 try{
-$db = openDB();
+$db = getPdoConnection();
 $sql = "select * from palaute";
 $query = $db->query($sql); 
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
