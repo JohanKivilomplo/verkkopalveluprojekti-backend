@@ -1,7 +1,8 @@
 <?php
+require_once '../inc/functions.php';
+require_once '../inc/headers.php';
 
-include '../inc/headers.php';
-
+$input = json_decode(file_get_contents('php://input'));
 $sukunimi = filter_var($input -> sukunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $osoite = filter_var($input -> osoite, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $postinro = filter_var($input -> postinro, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -14,7 +15,7 @@ try {
     
 
     // Insert asiakas
-    $sql = "insert into customer (etunimi,sukunimi,osoite,postinro,postitmp) values
+    $sql = "insert into asiakas (etunimi,sukunimi,osoite,postinro,postitmp) values
     ('" .
         filter_var($etunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','".
         filter_var($sukunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','".
@@ -26,8 +27,8 @@ try {
     $asiakasnro = executeInsert($db, $sql);
 
     // Insert Order
-    $sql = "insert into 'tilausrivi' (asiakasnro) values ($asiakasnro)";
-    $order_id = executeInsert($db, $sql);
+    $sql = "insert into 'tilaus' (asiakasnro) values ($asiakasnro)";
+    $tilausnro = executeInsert($db, $sql);
 
         foreach ($cart as $product) {
           $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
