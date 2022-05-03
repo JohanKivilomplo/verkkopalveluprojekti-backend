@@ -42,7 +42,7 @@ try {
         $db -> commit(); 
 
         header('HTTP/1.1 200 OK');
-        $data = array('id' => $asiakasnro);
+        $data = array('asiakasnro' => $asiakasnro);
         echo json_encode($data);
 }
 catch (PDOException $pdoex) {
