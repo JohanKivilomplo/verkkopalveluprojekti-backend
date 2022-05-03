@@ -27,14 +27,14 @@ try {
     $asiakasnro = executeInsert($db, $sql);
 
     // Insert Order
-    $sql = "insert into 'tilaus' (asiakasnro) values ($asiakasnro)";
+    $sql = "insert into tilaus (asiakasnro) values ($asiakasnro)";
     $tilausnro = executeInsert($db, $sql);
 
         foreach ($cart as $product) {
           $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
         .
           $tilausnro . "," .
-          $tuote -> tuotenro
+          $product -> tilausnro
           . ")";
           executeInsert($db, $sql);
         }

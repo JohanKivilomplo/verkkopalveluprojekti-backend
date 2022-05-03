@@ -39,7 +39,7 @@ FOREIGN KEY (asiakasnro) REFERENCES asiakas(asiakasnro)
 );
 
 CREATE table tilausrivi (
-tilausnro INT NOT NULL PRIMARY KEY,
+    tilausnro INT NOT NULL PRIMARY KEY,
     rivinro SMALLINT NOT NULL,
     tuotenro INT NOT NULL,
     kpl INT NOT NULL,
