@@ -3,6 +3,7 @@ require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
 $input = json_decode(file_get_contents('php://input'));
+$etunimi = filter_var($input-> etunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $sukunimi = filter_var($input -> sukunimi, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $osoite = filter_var($input -> osoite, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $postinro = filter_var($input -> postinro, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -30,22 +31,23 @@ try {
     $sql = "insert into tilaus (asiakasnro) values ($asiakasnro)";
     $tilausnro = executeInsert($db, $sql);
 
-        foreach ($cart as $product) {
-          $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
+      foreach ($cart as $tuote) {
+        $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
         .
           $tilausnro . "," .
-          $product -> tilausnro
-          . ")";
-          executeInsert($db, $sql);
-        }
+          $tuote -> tuotenro
+        . ")";
+        executeInsert($db, $sql);
+      }
 
         $db -> commit(); 
 
         header('HTTP/1.1 200 OK');
-        $data = array('asiakasnro' => $asiakasnro);
+        $data = array('tilaus' => $asiakasnro);
         echo json_encode($data);
 }
 catch (PDOException $pdoex) {
     $db -> rollback();
     returnError($pdoex);
 }
+  

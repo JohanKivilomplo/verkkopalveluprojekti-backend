@@ -31,7 +31,7 @@ tuotenro INT PRIMARY KEY AUTO_INCREMENT,
 );
 
 CREATE table tilaus (
-tilausnro INT PRIMARY KEY AUTO_INCREMENT,
+tilausnro INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 asiakasnro INT NOT NULL,
 tilauspvm DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 tila CHAR(1),
@@ -39,12 +39,16 @@ FOREIGN KEY (asiakasnro) REFERENCES asiakas(asiakasnro)
 );
 
 CREATE table tilausrivi (
-    tilausnro INT NOT NULL PRIMARY KEY,
+    tilausnro INT NOT NULL,
     rivinro SMALLINT NOT NULL,
     tuotenro INT NOT NULL,
     kpl INT NOT NULL,
-    FOREIGN KEY (tilausnro) REFERENCES tilaus(tilausnro),
-    FOREIGN KEY (tuotenro) REFERENCES tuote(tuotenro)
+    FOREIGN KEY (tuotenro) REFERENCES tuote(tuotenro),
+    CONSTRAINT `fk_tilausrivi_tilaus` FOREIGN KEY (tilausnro)
+    REFERENCES tilaus(tilausnro),
+    CONSTRAINT `fk_tilausrivi_tuote` FOREIGN KEY (tuotenro)
+    REFERENCES tuote(tuotenro),
+    CONSTRAINT `pk_tilausrivi` PRIMARY KEY (tilausnro, tuotenro)
 );
 
 CREATE table palaute ( 
