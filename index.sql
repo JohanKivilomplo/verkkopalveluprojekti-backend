@@ -17,7 +17,7 @@ CREATE table ASIAKAS (
 
 CREATE TABLE tuoteryhma (
     tuoteryhmanro INT PRIMARY KEY AUTO_INCREMENT,
-tuoteryhmanimi VARCHAR(255)
+    tuoteryhmanimi VARCHAR(255)
 );
 
 CREATE TABLE tuote (
@@ -53,9 +53,12 @@ CREATE table tilausrivi (
 
 CREATE table palaute ( 
     palauteID INT PRIMARY KEY AUTO_INCREMENT,
+    etunimi VARCHAR(255),
+    sukunimi VARCHAR(255),
     sahkoposti VARCHAR(255) NOT NULL,
     palaute VARCHAR(255) NOT NULL,
     palautepvm DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+  
 );
 
 INSERT INTO tuoteryhma(tuoteryhmanimi)
