@@ -27,14 +27,14 @@ try {
     $asiakasnro = executeInsert($db, $sql);
 
     // Insert Order
-    $sql = "insert into 'tilaus' (asiakasnro) values ($asiakasnro)";
+    $sql = "insert into tilaus (asiakasnro) values ($asiakasnro)";
     $tilausnro = executeInsert($db, $sql);
 
         foreach ($cart as $product) {
           $sql = "insert into tilausrivi (tilausnro, tuotenro) values ("
         .
           $tilausnro . "," .
-          $tuote -> tuotenro
+          $product -> tilausnro
           . ")";
           executeInsert($db, $sql);
         }
@@ -42,7 +42,7 @@ try {
         $db -> commit(); 
 
         header('HTTP/1.1 200 OK');
-        $data = array('id' => $asiakasnro);
+        $data = array('asiakasnro' => $asiakasnro);
         echo json_encode($data);
 }
 catch (PDOException $pdoex) {

@@ -1,6 +1,6 @@
 <?php
 
-/* function getPdoConnection(): object {
+function getPdoConnection(): object {
     $ini= parse_ini_file("../config.ini", true);
 
     $host = $ini['host'];
@@ -10,7 +10,7 @@
     $db = new PDO("mysql:host=$host;dbname=$database;charset=utf8",$user,$password);
     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     return $db;
-} */
+} 
 
 function selectAsJson(object $db, string $sql): void {
     $query = $db->query($sql);
